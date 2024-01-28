@@ -1,4 +1,4 @@
-# ![Exchange_Github](https://private-user-images.githubusercontent.com/6964549/300279905-781d5420-e8a6-4537-a1b1-56eb665dfeee.png)$${\color{blue}Exchange \space PowerShell \space Repo}$$
+# ![ExchangeGithub](https://github.com/rgel/Exchange/assets/6964549/1a0ac5a4-519d-4fe7-8de0-7687e1bd6ce3)$${\color{blue}Exchange \space PowerShell \space Repo}$$
 
 ##
 ### $${\color{green}MODULES}$$
