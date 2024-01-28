@@ -1,6 +1,5 @@
-# ![ExchangeGithub](https://github.com/rgel/Exchange/assets/6964549/1a0ac5a4-519d-4fe7-8de0-7687e1bd6ce3)$${\color{blue}Exchange \space PowerShell \space Repo}$$
+# ![Exchange_Logo_2013-2019](https://github.com/rgel/Exchange/assets/6964549/9b69912f-ac12-4224-af84-5fa7cc30946d)$${\color{blue}Exchange \space PowerShell \space Repo}$$
 
-##
 ### $${\color{green}MODULES}$$
 
 ### ${\color{blue}Power-EXCH \space Automation \space Module}$
