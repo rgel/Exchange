@@ -1,6 +1,6 @@
 # ![Exchange_Logo_2013-2019](https://github.com/rgel/Exchange/assets/6964549/9b69912f-ac12-4224-af84-5fa7cc30946d)
 
-${\color{blue}Exchange \space PowerShell \space Repo}$
+# ${\color{blue}Exchange \space PowerShell \space Repo}$
 
 ### $${\color{green}MODULES}$$
 
