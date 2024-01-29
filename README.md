@@ -1,4 +1,4 @@
-# ![Exchange_Narrow_Blue_PowerShell](https://github.com/rgel/Exchange/assets/6964549/a8380f46-2c64-4a8f-ad8a-a2e9de90f04d)$${\color{blue}Exchange \space PowerShell \space Repo}$$
+# ![Exchange_Logo_2013-2019](https://github.com/rgel/Exchange/assets/6964549/9b69912f-ac12-4224-af84-5fa7cc30946d)$${\color{blue}Exchange \space PowerShell \space Repo}$$
 
 ### $${\color{green}MODULES}$$
 
@@ -6,8 +6,8 @@
 ### Coming soon ...
 
 > [!NOTE]
-> EMS is preferred method for connecting Exchange\
-> But it is not required, a remote PSSession is enough
+> [<b>Exchange Management Shell</b>](https://learn.microsoft.com/en-us/powershell/exchange/open-the-exchange-management-shell?view=exchange-ps) is a preferred method for connecting to Exchange servers\
+> But it is not required, a remote [<b>PSSession</b>](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps) is good enough
 
 + To install this module, drop the entire `Power-EXCH` folder into one of your module directories
 
@@ -28,6 +28,6 @@
 > [!TIP]
 > To start using the module functions:
 
-+ Open <b>EMS</b> [<b>Exchange Management Shell</b>](https://learn.microsoft.com/en-us/powershell/exchange/open-the-exchange-management-shell?view=exchange-ps) console
-+ To open <b>EMS</b> on Core Server, type `LaunchEMS` in the console
++ Open <b>EMS</b> console. To open <b>EMS</b> on Core Server, type `LaunchEMS` in the console
++ If you have no <b>EMS</b>, please install [<b>Exchange Management Tools</b>](https://learn.microsoft.com/en-us/exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2019)
 + Optionally, connect to your On-Prem Exchange server by `Connect-ExchangeServer -Auto` cmdlet
