@@ -3,7 +3,7 @@
 ### $${\color{green}MODULES}$$
 
 ### ${\color{blue}Power-EXCH \space Automation \space Module}$
-### Coming soon ...
+### [<ins>Power-EXCH</ins>](https://github.com/rgel/Exchange/tree/main/Power-EXCH)
 
 > [!NOTE]
 > [<b>Exchange Management Shell</b>](https://learn.microsoft.com/en-us/powershell/exchange/open-the-exchange-management-shell?view=exchange-ps) is a preferred method for connecting to Exchange servers\
@@ -31,3 +31,9 @@
 + Open <b>EMS</b> console. To open <b>EMS</b> on Core Server, type `LaunchEMS` in the console
 + If you have no <b>EMS</b>, please install [<b>Exchange Management Tools</b>](https://learn.microsoft.com/en-us/exchange/plan-and-deploy/post-installation-tasks/install-management-tools?view=exchserver-2019)
 + Optionally, connect to your On-Prem Exchange server by `Connect-ExchangeServer -Auto` cmdlet
+
+|No|Function|Description|
+|----|----|----|
+|1|[<b>Set-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Put an Exchange Server in Maintenance Mode|
+|2|[<b>Exit-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Take an Exchange Server out of Maintenance Mode|
+|3|[<b>Get-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Verify Exchange Servers Maintenance Mode status|
