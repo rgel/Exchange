@@ -37,3 +37,4 @@
 |1|[<b>Set-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Put an Exchange Server in Maintenance Mode|
 |2|[<b>Exit-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Take an Exchange Server out of Maintenance Mode|
 |3|[<b>Get-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Verify Exchange Servers Maintenance Mode status|
+|4|[<b>Get-PExServer</b>](https://ps1code.com/2024/02/16/pexsrv/)|Filter Exchange Servers by Release Year|
