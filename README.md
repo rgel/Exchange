@@ -2,7 +2,6 @@
 
 ### $${\color{green}MODULES}$$
 
-### ${\color{blue}Power-EXCH \space Automation \space Module}$
 ### [<ins>Power-EXCH</ins>](https://github.com/rgel/Exchange/tree/main/Power-EXCH)
 
 > [!NOTE]
