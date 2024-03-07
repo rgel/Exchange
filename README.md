@@ -36,5 +36,8 @@
 |1|[<b>Set-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Put an Exchange Server in Maintenance Mode|
 |2|[<b>Exit-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Take an Exchange Server out of Maintenance Mode|
 |3|[<b>Get-PExMaintenanceMode</b>](https://ps1code.com/2024/02/05/pexmm/)|Verify Exchange Servers Maintenance Mode status|
-|4|[<b>Get-PExServer</b>](https://ps1code.com/2024/02/16/pexsrv/)|<b>`New!`</b>Filter Exchange Servers by Release Year|
-|5|[<b>Get-PExMailbox</b>](https://ps1code.com/2024/02/22/pexmbx/)|<b>`New!`</b>Retrieve mailboxes in Hybrid organization|
+|4|[<b>Get-PExServer</b>](https://ps1code.com/2024/02/16/pexsrv/)|Filter Exchange Servers by Release Year|
+|5|[<b>Get-PExMailbox</b>](https://ps1code.com/2024/02/22/pexmbx/)|Retrieve mailboxes in Hybrid organization|
+|6|[<b>Get-PExMailboxUsage</b>](https://ps1code.com/2024/03/07/pexmsz/)|<b>`New!`</b>Get Exchange mailbox size|
+|7|[<b>ConvertFrom-PExExchangeSize</b>](https://ps1code.com/2024/03/07/pexmsz/)|<b>`New!`</b>Convert a string, representing a Size, returned by EMS cmdlets|
+|8|[<b>New-PercentageBar</b>](https://ps1code.com/2016/07/16/percentage-bar-powershell/)|Create colored and adjustable Percentage Bar|
