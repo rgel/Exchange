@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+	<ViewDefinitions>
+	<!-- ****
+    [PExSize]
+    ***** -->
+		<View>
+			<Name>Power-EXCH_PExSize</Name>
+			<ViewSelectedBy>
+				<TypeName>PExSize</TypeName>
+			</ViewSelectedBy>
+			<TableControl>
+				<TableHeaders>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Bytes (B)</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Megabytes (MB)</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Gigabytes (GB)</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+				</TableHeaders>
+				<TableRowEntries>
+					<TableRowEntry>
+						<TableColumnItems>
+							<TableColumnItem><PropertyName>Optimal</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>Bytes</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>MB</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>GB</PropertyName></TableColumnItem>
+						</TableColumnItems>
+					</TableRowEntry>
+				</TableRowEntries>
+			</TableControl>
+		</View>
+    <!-- ************
+    [PExMailboxUsage]
+    ************* -->
+		<View>
+			<Name>Power-EXCH_PExMailboxUsage</Name>
+			<ViewSelectedBy>
+				<TypeName>PExMailboxUsage</TypeName>
+			</ViewSelectedBy>
+			<TableControl>
+				<TableHeaders>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Utilization Bar</Label>
+							<Alignment>Right</Alignment>
+							<Width>30</Width>
+						</TableColumnHeader>
+				</TableHeaders>
+				<TableRowEntries>
+					<TableRowEntry>
+						<TableColumnItems>
+							<TableColumnItem><PropertyName>Alias</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>Size</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>Quota</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>UtilizationBar</PropertyName></TableColumnItem>
+						</TableColumnItems>
+					</TableRowEntry>
+				</TableRowEntries>
+			</TableControl>
+		</View>
+    <!-- ****
+    [PExTier]
+    ***** -->
+		<View>
+			<Name>Power-EXCH_PExTier</Name>
+			<ViewSelectedBy>
+				<TypeName>PExTier</TypeName>
+			</ViewSelectedBy>
+			<TableControl>
+				<TableHeaders>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Quota (GB)</Label>
+							<Alignment>Right</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Archive Quota (GB)</Label>
+							<Alignment>Right</Alignment>
+						</TableColumnHeader>
+				</TableHeaders>
+				<TableRowEntries>
+					<TableRowEntry>
+						<TableColumnItems>
+							<TableColumnItem><PropertyName>Tier</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>Name</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>Quota</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>ArchiveQuota</PropertyName></TableColumnItem>
+						</TableColumnItems>
+					</TableRowEntry>
+				</TableRowEntries>
+			</TableControl>
+		</View>
+	</ViewDefinitions>
+</Configuration>
