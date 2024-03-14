@@ -113,5 +113,48 @@
 				</TableRowEntries>
 			</TableControl>
 		</View>
+	<!-- *********
+    [PExRecipient]
+    ********** -->
+		<View>
+			<Name>Power-EXCH_PExRecipient</Name>
+			<ViewSelectedBy>
+				<TypeName>PExRecipient</TypeName>
+			</ViewSelectedBy>
+			<TableControl>
+				<TableHeaders>
+						<TableColumnHeader>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Mail Address</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Recipient Type</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Recipient Details</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+						<TableColumnHeader>
+							<Label>Remote Type</Label>
+							<Alignment>Left</Alignment>
+						</TableColumnHeader>
+				</TableHeaders>
+				<TableRowEntries>
+					<TableRowEntry>
+						<TableColumnItems>
+							<TableColumnItem><PropertyName>User</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>MailAddress</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>RecipientType</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>RecipientDetails</PropertyName></TableColumnItem>
+							<TableColumnItem><PropertyName>RemoteType</PropertyName></TableColumnItem>
+						</TableColumnItems>
+					</TableRowEntry>
+				</TableRowEntries>
+			</TableControl>
+		</View>
 	</ViewDefinitions>
 </Configuration>
