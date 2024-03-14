@@ -222,13 +222,16 @@ $global:ExchServiceSnapshot = @{
 	'MSExchangeUM' = 'Microsoft Exchange Unified Messaging';
 	'MSExchangeUMCR' = 'Microsoft Exchange Unified Messaging Call Router';
 	'ClusSvc' = 'Cluster Service';
-	'Centerity.Agent' = 'Centerity Monitor Agent'; # Monitor
-	'GxFWD(Instance001)' = 'Commvault Network Daemon (Instance001)'; # Backup
-	'MSME' = 'McAfee Security for Microsoft Exchange'; # AV for Exchange
-	'SentinelAgent' = 'Sentinel Agent'; # AV for OS
-	'RFExchConn' = 'RightFax Exchange Connector'; # FAX
+}
+$global:ExchService3dParty = @{
+	'Centerity.Agent' = 'Centerity Monitor Agent';						# Monitor
+	'GxFWD(Instance001)' = 'Commvault Network Daemon (Instance001)';	# Backup
+	'MSME' = 'McAfee Security for Microsoft Exchange';					# AV for Exchange
+	'SentinelAgent' = 'Sentinel Agent';									# AV for OS
+	'RFExchConn' = 'RightFax Exchange Connector';						# FAX
 }
 
+### WELL-KNOWN LOG PATHS ###
 $global:ExchLogsPath = @{
 	'IISLog' = 'C$\inetpub\logs\LogFiles\';
 	'ExchangeLogging' = 'C$\Program Files\Microsoft\Exchange Server\V15\Logging\';
@@ -282,7 +285,33 @@ $ExchActiveComponent = @(
 
 #region Classes
 
-Class PEx { } #EndClass PEx
+Class PEx { }
+
+Class PExSize: PEx
+{
+	[ValidateNotNullOrEmpty()][string]$Optimal
+	[long]$Bytes
+	[decimal]$KB
+	[double]$MB
+	[double]$GB
+	[double]$TB
+	
+	[string] ToString () { return "$($this.Optimal)" }
+}
+
+Class PExMailboxUsage: PEx
+{
+	[ValidateNotNullOrEmpty()][string]$Alias
+	[ValidateNotNullOrEmpty()][string]$Address
+	[ValidateNotNullOrEmpty()][string]$Size
+	[double]$SizeGB
+	[ValidateNotNullOrEmpty()][string]$Quota
+	[double]$QuotaGB
+	[double]$UtilizationPercent
+	[ValidateNotNullOrEmpty()][string]$UtilizationBar
+	
+	[string] ToString () { return "$($this.UtilizationBar) $($this.Address) [$($this.Size)/$($this.Quota)]" }
+}
 
 Class PExTier: PEx
 {
@@ -292,7 +321,19 @@ Class PExTier: PEx
 	[ValidateNotNullOrEmpty()][string]$ArchiveQuota
 	
 	[string] ToString () { return "$($this.Tier)::$($this.Name)" }
+}
+
+Class PExRecipient: PEx
+{
+	[ValidateNotNullOrEmpty()][string]$User
+	[string]$MailAddress
+	[ValidateNotNullOrEmpty()][string]$RecipientType
+	[ValidateNotNullOrEmpty()][string]$RecipientDetails
+	[ValidateNotNullOrEmpty()][string]$RemoteType
 	
-} #EndClass PExTier
+	[string] ToString () { return "$($this.User) [$($this.RemoteType)\$($this.RecipientType)]" }
+	[bool] IsRemote () { if ($this.RemoteType -ne 'OnPrem') { return $true } else { return $false } }
+	[bool] IsMailEnabled () { if ($this.MailAddress) { return $true } else { return $false } }
+}
 
 #endregion
