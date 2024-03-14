@@ -39,5 +39,6 @@
 |4|[<b>Get-PExServer</b>](https://ps1code.com/2024/02/16/pexsrv/)|Filter Exchange Servers by Release Year|
 |5|[<b>Get-PExMailbox</b>](https://ps1code.com/2024/02/22/pexmbx/)|Retrieve mailboxes in Hybrid organization|
 |6|[<b>Get-PExMailboxUsage</b>](https://ps1code.com/2024/03/07/pexmsz/)|<b>`New!`</b>Get Exchange mailbox size|
-|7|[<b>ConvertFrom-PExExchangeSize</b>](https://ps1code.com/2024/03/07/pexmsz/)|<b>`New!`</b>Convert a string, representing a Size, returned by EMS cmdlets|
+|7|[<b>ConvertFrom-PExExchangeSize</b>](https://ps1code.com/2024/03/07/pexmsz/)|Convert a string, representing a Size, returned by EMS cmdlets|
 |8|[<b>New-PercentageBar</b>](https://ps1code.com/2016/07/16/percentage-bar-powershell/)|Create colored and adjustable Percentage Bar|
+|9|[<b>Get-PExRecipientType</b>](https://ps1code.com/2024/03/14/pexrcp/)|<b>`New!`</b>Get Recipient type|
